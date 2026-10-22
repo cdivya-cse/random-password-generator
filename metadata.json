@@ -1,0 +1,6 @@
+{
+  "name": "SecurePass - Random Password Checker & Generator (Java OOP)",
+  "description": "A cybersecurity-grade Random Password Checker and Generator powered by Object-Oriented Java backend, featuring real-time password strength scoring, SecureRandom generation, and complete mini-project documentation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

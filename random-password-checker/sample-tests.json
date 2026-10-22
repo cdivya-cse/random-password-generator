@@ -1,0 +1,62 @@
+[
+  {
+    "id": "TC-01",
+    "name": "Trivial Number Sequence",
+    "password": "12345",
+    "expected": {
+      "strengthLevel": "Very Weak",
+      "meetsLength": false,
+      "scoreThresholdMax": 20
+    },
+    "rationale": "Fails length requirement and contains sequential digits."
+  },
+  {
+    "id": "TC-02",
+    "name": "Dictionary Password",
+    "password": "password",
+    "expected": {
+      "strengthLevel": "Very Weak",
+      "meetsLength": true,
+      "scoreThresholdMax": 25
+    },
+    "rationale": "Meets 8 chars but heavily penalized as a known dictionary pattern."
+  },
+  {
+    "id": "TC-03",
+    "name": "Standard Basic Password",
+    "password": "Admin123",
+    "expected": {
+      "strengthLevel": "Weak",
+      "hasUppercase": true,
+      "hasLowercase": true,
+      "hasNumber": true,
+      "hasSpecial": false
+    },
+    "rationale": "Contains 3 character sets, but missing special characters and dictionary root."
+  },
+  {
+    "id": "TC-04",
+    "name": "Medium Diversity Password",
+    "password": "BlueSky#2026",
+    "expected": {
+      "strengthLevel": "Medium",
+      "meetsLength": true,
+      "hasUppercase": true,
+      "hasLowercase": true,
+      "hasNumber": true,
+      "hasSpecial": true
+    },
+    "rationale": "12 chars, meets all 4 character pools."
+  },
+  {
+    "id": "TC-05",
+    "name": "Cryptographically Strong Generated Password",
+    "password": "K#9xL$2mQ!vP8wZ1",
+    "expected": {
+      "strengthLevel": "Very Strong",
+      "score": 100,
+      "crackTimeDisplay": "Millions of years (Cryptographically Robust)"
+    },
+    "rationale": "16 characters, high entropy, zero dictionary patterns."
+  }
+]
